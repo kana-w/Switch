@@ -1,37 +1,28 @@
-
- /*--------> common*/
- .クラス名 {
-
-}
-.クラス名2 {
-
-}
+/*--------> common*/
 
 /* <-------- common *>/
 
 
 /*--------->header*/
- 
+
 header {
-    background-color: rgba(0,0,0,0.75);
-    height: 90px;
-    
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 90px;
 }
 
 .navbar-nav {
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
-
 .navbar-brand {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .navbar-brand img {
-    width: 185px;
-    height: 25px;
-    /* padding-top: 0; */
-    padding-left: 45px;
+  width: 185px;
+  height: 25px;
+  /* padding-top: 0; */
+  padding-left: 45px;
 }
 
 header li {
@@ -39,145 +30,140 @@ header li {
   font-size: 14px;
   padding: 0 10px;
   color: #ffffff;
-  }
-
+}
 
 .nav-link {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 
 .dropdown-menu {
-    background-color: #000000;
-    padding: 0;
-    width: 220px;
-    margin-top: 3px;
-  }
+  background-color: #000000;
+  padding: 0;
+  width: 220px;
+  margin-top: 3px;
+}
 
 .dropdown-item {
-    color: #ffffff;
-    font-size: small;
-    padding: 15px 40px 15px 20px;
+  color: #ffffff;
+  font-size: small;
+  padding: 15px 40px 15px 20px;
 }
 .dropdown-item:hover {
-    background-color: #734e30;
-    color: #ffffff;
+  background-color: #734e30;
+  color: #ffffff;
 }
-  
+
 .navbar-nav > li > a {
-      padding: 35px 11px;
-  }
+  padding: 35px 11px;
+}
 
-
-  header .nav-link {
-    color: #ffffff;
+header .nav-link {
+  color: #ffffff;
 }
 
 header .nav-link:hover {
-    color: gray;
+  color: gray;
 }
-  
+
 .dropdown-menu {
-      position: absolute;
-      top: 85px;
-  }
-  
+  position: absolute;
+  top: 85px;
+}
+
 .navbar {
-      padding: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /*ウィンドウ幅が最大767pxまでの場合に適用*/
+
+  header {
+    font-size: 14px;
+    background-color: #000000;
+    height: 60px;
+    padding: 0;
   }
-  
 
-  @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  .navbar {
+    padding: 0;
+    height: 60px;
+  }
 
-    header {
-           font-size: 14px;
-           background-color: #000000;
-           height: 60px;
-           padding: 0;
-    }
-   
-   
-    .navbar {
-        padding: 0;
-        height: 60px;
-    }
+  .navbar-nav {
+    background-color: #000000;
+  }
 
-    .navbar-nav {
-        background-color: #000000;
-    }
-   
-    .navbar-brand img {
-        width: 130px;
-        height: 18px;
-        padding: 0 0 0 20px;
-        margin: 0;
-    }
-   
-   /*ハンバーガーバー押すところ*/
-    .menu-trigger,
-    .menu-trigger span {
-       display: inline-block;
-       transition: all .4s;
-       box-sizing: border-box;
-     }
-    .menu-trigger {
-       width: 15px;
-       height: 60px;
-       position: absolute;
-       display: inline-block;
-       box-sizing: border-box;
-       right: 25px;
-       top: 0;
-       padding: 0;
-   
-     }
-     .menu-trigger span {
-       position: absolute;
-       left: 0;
-       width: 100%;
-       height: 4px;
-       background-color: #ffffff;
-       border-radius: 4px;
-     }
-   
-     .menu-trigger span:nth-of-type(1) {
-       top: 25px;
-       right: 15px;
-       width: 15px;
-       height: 3px;
-     }
-     .menu-trigger span:nth-of-type(2) {
-       top: 30px;
-       width: 15px;
-       height: 3px;
-     }
-     .menu-trigger span:nth-of-type(3) {
-       top: 35px;
-       width: 15px;
-       height: 3px;
-     }
-   
-   /* ハンバーガーバー中身(仮) */
-     .menuopen {
-       -webkit-appearance: none;
-       -moz-appearance: none;
-       appearance: none;
-       border-width: 0;
-       width: 0;
-       height: 0;
-   } 
-   
-   header .dropdown-item {
-       outline: none;
-   }
+  .navbar-brand img {
+    width: 130px;
+    height: 18px;
+    padding: 0 0 0 20px;
+    margin: 0;
+  }
 
-   .navbar-collapse {
+  /*ハンバーガーバー押すところ*/
+  .menu-trigger,
+  .menu-trigger span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .menu-trigger {
+    width: 15px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    right: 25px;
+    top: 0;
+    padding: 0;
+  }
+  .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+
+  .menu-trigger span:nth-of-type(1) {
+    top: 25px;
+    right: 15px;
+    width: 15px;
+    height: 3px;
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 30px;
+    width: 15px;
+    height: 3px;
+  }
+  .menu-trigger span:nth-of-type(3) {
+    top: 35px;
+    width: 15px;
+    height: 3px;
+  }
+
+  /* ハンバーガーバー中身*/
+  .menuopen {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-width: 0;
+    width: 0;
+    height: 0;
+  }
+
+  header .dropdown-item {
+    outline: none;
+  }
+
+  .navbar-collapse {
     position: absolute;
     width: 100%;
     top: 59px;
-   }
+  }
+}
 /* <--------header */
-
 
 /* --------> main */
 
