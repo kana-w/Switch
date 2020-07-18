@@ -151,39 +151,34 @@ header .navbar {
 
 /* --------> main */
 
-.top-img {
+main #top .top-img {
   background-image: url(./image/top.jpg);
+  background-size: cover;
   width: 100%;
-  height: 730px;
-  position: absolute;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.top-img p {
+main #top .top-img p {
   color: #373737;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
   font-family: 'Times New Roman', Times, serif;
   font-size: 35px;
   font-weight: bolder;
   white-space: nowrap;
 }
 
-.top-overview {
+main #top .top-overview {
   color: #fff;
   background-color: #000;
-  font-family: 'Times New Roman', Times, serif;
   width: 100%;
-  padding: 780px 0 50px;
+  padding: 60px 0 50px;
 }
 
-.top-overview .title p {
+main #top .top-overview h2 {
   margin-bottom: 20px;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -192,7 +187,7 @@ header .navbar {
   font-weight: bolder;
 }
 
-.top-overview p {
+main #top .top-overview p {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   font-size: 12px;
@@ -200,29 +195,44 @@ header .navbar {
   letter-spacing: 0.15em;
 }
 
-@media screen and (max-width: 800px) {
-  .top-img {
-    height: 400px;
+@media screen and (max-width: 1140px) {
+  main #top .top-overview p {
+    width: 100%;
+    padding: 0 27px;
   }
 
-  .top-img p {
+  main #top .top-overview h2 {
+    padding: 0 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: static;
+  }
+  main #top .top-img {
+    height: 400px;
+    position: static;
+  }
+
+  main #top .top-img p {
     color: #000;
-    top: 60%;
     font-size: 24px;
   }
 
-  .top-overview {
-    padding: 430px 0 30px;
+  main #top .top-overview {
+    padding: 30px 0;
   }
 
-  .top-overview .title p {
+  main #top .top-overview h2 {
     font-size: 18px;
-    margin: 0 10px 10px;
+    padding: 0 10px 10px;
   }
 
-  .top-overview p {
+  main #top .top-overview p {
     font-size: 12px;
-    margin: 0 27px 0;
+    padding: 0 27px;
     line-height: 30px;
   }
 }
