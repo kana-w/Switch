@@ -211,9 +211,9 @@ main #top .top-overview p {
   header {
     position: static;
   }
+
   main #top .top-img {
     height: 400px;
-    position: static;
   }
 
   main #top .top-img p {
@@ -227,7 +227,8 @@ main #top .top-overview p {
 
   main #top .top-overview h2 {
     font-size: 18px;
-    padding: 0 10px 10px;
+    padding: 0 10px;
+    margin-bottom: 30px;
   }
 
   main #top .top-overview p {
