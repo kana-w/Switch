@@ -6,7 +6,12 @@
 /*--------->header*/
 header {
   background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
   height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
 }
 
 header .navbar-nav {
@@ -145,6 +150,151 @@ header .navbar {
 /* <--------header */
 
 /* --------> main */
+
+main #top .top-img {
+  background-image: url(./image/top.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #top .top-img p {
+  color: #373737;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+main #top .top-overview {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  padding: 60px 0 50px;
+}
+
+main #top .top-overview h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.03em;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+main #top .top-overview p {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 35px;
+  letter-spacing: 0.15em;
+}
+
+main .plan {
+  background-color: #fff5ee;
+  margin: 100px 40px 0;
+  text-align: center;
+}
+
+main .plan .plan-img {
+  display: flex;
+}
+
+main .plan .plan-img img {
+  width: 25%;
+}
+
+main .plan .plan-overview {
+  padding: 56px 30px;
+}
+
+main .plan .plan-overview h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #734e30;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+main .plan .plan-overview p {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+@media screen and (max-width: 1140px) {
+  main #top .top-overview p {
+    width: 100%;
+    padding: 0 27px;
+  }
+
+  main #top .top-overview h2 {
+    padding: 0 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: static;
+  }
+
+  main #top .top-img {
+    height: 400px;
+  }
+
+  main #top .top-img p {
+    color: #000;
+    font-size: 24px;
+  }
+
+  main #top .top-overview {
+    padding: 30px 0;
+  }
+
+  main #top .top-overview h2 {
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+
+  main #top .top-overview p {
+    font-size: 12px;
+    padding: 0 27px;
+    line-height: 30px;
+  }
+
+  main .plan {
+    margin: 30px 16px;
+  }
+
+  main .plan .plan-img {
+    flex-wrap: wrap;
+  }
+
+  main .plan .plan-img img {
+    width: 50%;
+  }
+
+  main .plan .plan-overview {
+    padding: 30px 20px;
+  }
+
+  main .plan .plan-overview h2 {
+    font-size: 20px;
+  }
+
+  main .plan .plan-overview p {
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
 
 /* <-------- main */
 
