@@ -151,6 +151,19 @@ header .navbar {
 
 /* --------> main */
 
+main h2,
+p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+main .top-overview p,
+.cafe-overview p {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 35px;
+}
+
 main #top .top-img {
   background-image: url(./image/top.jpg);
   background-size: cover;
@@ -165,7 +178,6 @@ main #top .top-img p {
   color: #373737;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 35px;
   font-weight: bolder;
   white-space: nowrap;
@@ -180,50 +192,44 @@ main #top .top-overview {
 
 main #top .top-overview h2 {
   margin-bottom: 20px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.03em;
   font-size: 35px;
   font-weight: bolder;
 }
 
 main #top .top-overview p {
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  font-size: 12px;
-  line-height: 35px;
   letter-spacing: 0.15em;
 }
 
-main .plan {
-  background-color: #fff5ee;
-  margin: 100px 40px 0;
-  text-align: center;
+main #howtouse .plan .cafe-img {
+  flex-wrap: wrap;
 }
 
-main .plan .plan-img {
+main #howtouse .plan {
+  background-color: #fff5ee;
+  margin-top: 100px;
+  padding: 0;
+}
+
+main #howtouse .plan .cafe-img {
   display: flex;
 }
 
-main .plan .plan-img img {
-  width: 25%;
+main #howtouse .plan img {
+  padding: 0;
 }
 
-main .plan .plan-overview {
+main #howtouse .plan .cafe-overview {
   padding: 56px 30px;
 }
 
-main .plan .plan-overview h2 {
-  font-family: 'Times New Roman', Times, serif;
+main #howtouse .plan .cafe-overview h2 {
   color: #734e30;
   font-size: 36px;
   margin-bottom: 12px;
 }
 
-main .plan .plan-overview p {
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  font-size: 13px;
-  line-height: 35px;
+main #howtouse .plan .cafe-overview p {
   letter-spacing: 0.1em;
   margin: 0;
 }
@@ -270,29 +276,26 @@ main .plan .plan-overview p {
     line-height: 30px;
   }
 
-  main .plan {
-    margin: 30px 16px;
-  }
-
-  main .plan .plan-img {
-    flex-wrap: wrap;
-  }
-
-  main .plan .plan-img img {
-    width: 50%;
-  }
-
-  main .plan .plan-overview {
+  main #howtouse .plan .cafe-overview {
     padding: 30px 20px;
   }
 
-  main .plan .plan-overview h2 {
+  main #howtouse .plan .cafe-overview h2 {
     font-size: 20px;
   }
 
-  main .plan .plan-overview p {
+  main #howtouse .plan .cafe-overview p {
     font-size: 13px;
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #howtouse {
+    margin: 5%;
+  }
+  main #howtouse .plan .cafe-img img {
+    width: 50%;
   }
 }
 
