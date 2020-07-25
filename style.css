@@ -208,15 +208,10 @@ main #howtouse .plan .cafe-img {
 main #howtouse .plan {
   background-color: #fff5ee;
   margin-top: 100px;
-  padding: 0;
 }
 
 main #howtouse .plan .cafe-img {
   display: flex;
-}
-
-main #howtouse .plan img {
-  padding: 0;
 }
 
 main #howtouse .plan .cafe-overview {
