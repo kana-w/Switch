@@ -201,17 +201,9 @@ main #top .top-overview p {
   letter-spacing: 0.15em;
 }
 
-main #howtouse .plan .cafe-img {
-  flex-wrap: wrap;
-}
-
 main #howtouse .plan {
   background-color: #fff5ee;
   margin-top: 100px;
-}
-
-main #howtouse .plan .cafe-img {
-  display: flex;
 }
 
 main #howtouse .plan .cafe-overview {
@@ -289,6 +281,7 @@ main #howtouse .plan .cafe-overview p {
   main #howtouse {
     margin: 5%;
   }
+
   main #howtouse .plan .cafe-img img {
     width: 50%;
   }
