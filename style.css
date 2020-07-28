@@ -279,7 +279,7 @@ main #howtouse .plan .cafe-overview p {
 
 @media screen and (max-width: 576px) {
   main #howtouse {
-    margin: 5%;
+    margin: 20px;
   }
 
   main #howtouse .plan .cafe-img img {
