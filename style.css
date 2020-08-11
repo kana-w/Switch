@@ -77,7 +77,7 @@ header .navbar {
 @media screen and (max-width: 1199px) {
   header {
     font-size: 14px;
-    background-color: #000;
+    background-color: #2d1d13;
     height: 60px;
     padding: 0;
   }
@@ -88,7 +88,7 @@ header .navbar {
   }
 
   header .navbar-nav {
-    background-color: #000;
+    background-color: #2d1d13;
   }
 
   header .navbar-brand img {
@@ -222,36 +222,40 @@ main #howtouse .plan .cafe-overview p {
   margin: 0;
 }
 
-main #CSF .card {
+main #cards .card {
   position: relative;
 }
 
-main #CSF .card .triangle {
+main #cards .card ::before {
+  content: '';
+  display: inline-block;
   position: absolute;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 150px 150px 0 0;
   border-color: #fff transparent transparent transparent;
+  z-index: -1;
 }
 
-main #CSF .card .title h3 {
+main #cards .card h3 {
   position: absolute;
   color: #2d1d13;
   font-size: 22px;
   font-weight: bolder;
+  z-index: 0;
 }
 
-main #CSF .card .card-body {
+main #cards .card .card-body {
   background-color: #fff5ee;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-main #CSF .card .card-body .card-text {
+main #cards .card .card-body .card-text {
   text-align: start;
 }
 
-main #CSF .card .card-body button {
+main #cards .card .card-body button {
   color: #fff;
   background-color: #2d1d13;
   border: none;
@@ -260,7 +264,7 @@ main #CSF .card .card-body button {
   margin-top: 1.25rem;
 }
 
-main #CSF .card .card-body button:hover {
+main #cards .card .card-body button:hover {
   background-color: #734e30;
 }
 
@@ -274,10 +278,21 @@ main #CSF .card .card-body button:hover {
     padding: 0 30px;
     width: 100%;
   }
+}
 
-  main #CSF .card .card-body button {
-    width: 150px;
-    height: 40px;
+@media screen and (max-width: 992px) {
+  main #cards .card .card-body button {
+    width: 110px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  main #cards .card ::before {
+    border-width: 100px 100px 0 0;
+  }
+
+  main #cards .card h3 {
+    font-size: 16px;
   }
 }
 
@@ -331,6 +346,19 @@ main #CSF .card .card-body button:hover {
   }
   main #howtouse .plan .cafe-img img {
     width: 50%;
+  }
+
+  main #cards {
+    width: auto;
+    margin: 20px;
+  }
+
+  main #cards .card ::before {
+    border-width: 150px 150px 0 0;
+  }
+
+  main #cards .card h3 {
+    font-size: 22px;
   }
 }
 
