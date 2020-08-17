@@ -222,13 +222,16 @@ main #howtouse .plan .cafe-overview p {
   margin: 0;
 }
 
-main #cards .card {
-  position: relative;
+main #cards .card h3 {
+  position: absolute;
+  color: #2d1d13;
+  font-size: 22px;
+  font-weight: bolder;
+  z-index: 0;
 }
 
-main #cards .card ::before {
+main #cards .card h3::before {
   content: '';
-  display: inline-block;
   position: absolute;
   width: 0;
   height: 0;
@@ -238,17 +241,10 @@ main #cards .card ::before {
   z-index: -1;
 }
 
-main #cards .card h3 {
-  position: absolute;
-  color: #2d1d13;
-  font-size: 22px;
-  font-weight: bolder;
-  z-index: 0;
-}
-
 main #cards .card .card-body {
   background-color: #fff5ee;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  padding: 20px;
 }
 
 main #cards .card .card-body .card-text {
@@ -261,7 +257,7 @@ main #cards .card .card-body button {
   border: none;
   width: 200px;
   height: 55px;
-  margin-top: 1.25rem;
+  margin-top: 20px;
 }
 
 main #cards .card .card-body button:hover {
@@ -287,7 +283,7 @@ main #cards .card .card-body button:hover {
     font-size: 12px;
   }
 
-  main #cards .card ::before {
+  main #cards .card h3::before {
     border-width: 100px 100px 0 0;
   }
 
@@ -353,7 +349,7 @@ main #cards .card .card-body button:hover {
     margin: 20px;
   }
 
-  main #cards .card ::before {
+  main #cards .card h3::before {
     border-width: 150px 150px 0 0;
   }
 
