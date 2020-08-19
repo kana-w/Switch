@@ -5,7 +5,7 @@
 
 /*--------->header*/
 header {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(45, 29, 19, 0.8);
   width: 100%;
   height: 90px;
   position: absolute;
@@ -36,7 +36,7 @@ header .nav-link {
 }
 
 header .dropdown-menu {
-  background-color: #000;
+  background-color: #2d1d13;
   padding: 0;
   width: 220px;
   margin-top: 3px;
@@ -77,7 +77,7 @@ header .navbar {
 @media screen and (max-width: 1199px) {
   header {
     font-size: 14px;
-    background-color: #000;
+    background-color: #2d1d13;
     height: 60px;
     padding: 0;
   }
@@ -88,7 +88,7 @@ header .navbar {
   }
 
   header .navbar-nav {
-    background-color: #000;
+    background-color: #2d1d13;
   }
 
   header .navbar-brand img {
@@ -158,7 +158,8 @@ p {
 }
 
 main .top-overview p,
-.cafe-overview p {
+.cafe-overview p,
+.card-body p {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   font-size: 13px;
   line-height: 35px;
@@ -175,7 +176,7 @@ main #top .top-img {
 }
 
 main #top .top-img p {
-  color: #373737;
+  color: #1c130c;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 35px;
@@ -185,7 +186,7 @@ main #top .top-img p {
 
 main #top .top-overview {
   color: #fff;
-  background-color: #000;
+  background-color: #2d1d13;
   width: 100%;
   padding: 60px 0 50px;
 }
@@ -203,7 +204,7 @@ main #top .top-overview p {
 
 main #howtouse .plan {
   background-color: #fff5ee;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 
 main #howtouse .plan .cafe-overview {
@@ -221,6 +222,48 @@ main #howtouse .plan .cafe-overview p {
   margin: 0;
 }
 
+main #cards .card h3 {
+  position: absolute;
+  color: #2d1d13;
+  font-size: 22px;
+  font-weight: bolder;
+  z-index: 0;
+}
+
+main #cards .card h3::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 0;
+  border-color: #fff transparent transparent transparent;
+  z-index: -1;
+}
+
+main #cards .card .card-body {
+  background-color: #fff5ee;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  padding: 20px;
+}
+
+main #cards .card .card-body .card-text {
+  text-align: start;
+}
+
+main #cards .card .card-body button {
+  color: #fff;
+  background-color: #2d1d13;
+  border: none;
+  width: 200px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+main #cards .card .card-body button:hover {
+  background-color: #734e30;
+}
+
 @media screen and (max-width: 1140px) {
   main #top .top-overview p {
     width: 100%;
@@ -230,6 +273,22 @@ main #howtouse .plan .cafe-overview p {
   main #top .top-overview h2 {
     padding: 0 30px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main #cards .card .card-body button {
+    width: 110px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  main #cards .card h3::before {
+    border-width: 100px 100px 0 0;
+  }
+
+  main #cards .card h3 {
+    font-size: 16px;
   }
 }
 
@@ -281,9 +340,21 @@ main #howtouse .plan .cafe-overview p {
   main #howtouse {
     margin: 20px;
   }
-
   main #howtouse .plan .cafe-img img {
     width: 50%;
+  }
+
+  main #cards {
+    width: auto;
+    margin: 20px;
+  }
+
+  main #cards .card h3::before {
+    border-width: 150px 150px 0 0;
+  }
+
+  main #cards .card h3 {
+    font-size: 22px;
   }
 }
 
